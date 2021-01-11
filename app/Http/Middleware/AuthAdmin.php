@@ -14,6 +14,7 @@ class AuthAdmin
      * @param  \Closure  $next
      * @return mixed
      */
+    // function that handle admin session
     public function handle(Request $request, Closure $next)
     {
         if(session('utype') === 'ADM'){
